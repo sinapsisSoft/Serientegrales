@@ -89,7 +89,7 @@
 	}
 	
 	.header.affix {
-		background:#000;
+		background:rgb(92,92,92);
 		width:100%;
 		top:0;
 		right:0;
@@ -1797,7 +1797,7 @@
 		display:block;
 		padding:50px 0;
 		position:relative;
-		background-color:#000;
+		background-color:#5c5c5c;
 	}
 	
 	.footer-wrapper img {
@@ -2619,7 +2619,7 @@
 	}
 	
 	ul.nav.navbar-nav.navbar-right {
-		background: rgba(0, 0, 0, 0.55);
+		background: rgb(38, 37, 37, 55%);
 	}
 		
 	.tp-caption p {
