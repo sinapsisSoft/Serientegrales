@@ -1,6 +1,6 @@
-	File Name: style.css
+	/* File Name: style.css
 	Template Name: Atlas
-	Created By: Designing Media
+	Created By: Designing Media */
 	
 
 /*	################################################################
@@ -89,7 +89,7 @@
 	}
 	
 	.header.affix {
-		background:rgb(92,92,92);
+		background:rgb(149, 149, 149);;
 		width:100%;
 		top:0;
 		right:0;
@@ -1804,7 +1804,7 @@
 		display:block;
 		padding:50px 0;
 		position:relative;
-		background-color:#5c5c5c;
+		background-color:#959595;
 	}
 	
 	.footer-wrapper img {
@@ -2617,16 +2617,21 @@
 /*	################################################################
 	20. Mobile Responsive
 	################################################################# */	
-	
-	@media (max-width: 768px) { {
-		.home-content h1 {font-size:31px !important
-		.tparrows,
-		.small_title,
-		.slider_menu a {display:none}
-	}
+	@media (max-width: 400px){
+    .tp-caption.rev-video h2{
+      font-size: 5em!important;
+    }
+  }
+	@media (max-width: 768px) {
+		/* .home-content h1 {
+      font-size:31px !important
+      .tparrows,
+      .small_title,
+      .slider_menu a {display:none}    
+    } */
 	
     ul.nav.navbar-nav.navbar-right {
-      background: rgb(38, 37, 37, 55%);
+      background: rgb(38, 37, 37, 29%);
     }
 		
     .tp-caption p {
@@ -2637,8 +2642,7 @@
 		
     .tp-caption h2 {
       font-size : 26px!important;
-      }	 
-	
+      }	 	
 	
     #slider4container .tparrows:before,
     #slider4container .tparrows:hover,
@@ -2656,15 +2660,22 @@
     .sliderbigtitle {
     font-size: 26px;
     }
-	
-	}
+}
+
+@media (max-width: 500px){
+  .tp-leftarrow, .tp-rightarrow{
+    visibility: hidden;
+  }
+}
+
+
 	
 	
 /*	################################################################
 	21. CUSTOM CSS SECTION
 	################################################################# */
 
-.row .quality {
+.about-wrapper .row .quality {
   -webkit-box-shadow: -13px -7px 35px -19px rgba(0,0,0,0.75);
   -moz-box-shadow: -13px -7px 35px -19px rgba(0,0,0,0.75);
   box-shadow: -13px -7px 35px -19px rgba(0,0,0,0.75);  
@@ -2672,31 +2683,65 @@
   transition: all 2s;
 }
 
-.row .quality h3 {
+.about-wrapper .row .quality h3 {
   transition-timing-function: ease-in-out;
   transition: all 1s;
 }
 
-.row .quality i {
+.about-wrapper .row .quality i {
   transition-timing-function: ease-in-out;
   transition: all 2s;
 }
 
-.row .quality:hover {
+.about-wrapper .row .quality:hover {
   background-color: rgb(247, 194, 33, 60%);  
 }
 
-.row .quality:hover h3 {
+.about-wrapper .row .quality:hover h3 {
   font-weight: 700;
   color: #ffff !important;
 }
 
-.row .quality:hover i {
+.about-wrapper .row .quality:hover i {
   color: #ffff !important;
 }
 
-.about-us p{
+.about-wrapper .about-us p{
   font-size: 16px;
   text-align: justify;
 }
-	
+
+.stand-up {
+  color: #ffff;
+  -webkit-box-shadow: 18px 16px 23px -13px rgba(55,64,80,1);
+  -moz-box-shadow: 18px 16px 23px -13px rgba(55,64,80,1);
+  box-shadow: 18px 16px 23px -13px rgba(55,64,80,1);
+}
+
+.stand-up .box {
+  height: 100px;  
+  align-items: center;
+  display: flex;
+  transition: all 1s ease-in-out;
+}
+.stand-up .box:hover{
+  transform: scale(1.1);
+  z-index: 4444;
+}
+
+.stand-up .box-up-left{
+  background: #374050;
+}
+
+.stand-up .box-up-right{
+  background: #FF5245;
+}
+
+.stand-up .box-down-left{
+  background: #2A8E9D;
+}
+
+.stand-up .box-down-right{
+  background: #FFC938;
+
+}

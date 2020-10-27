@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'CQ-Mono1';
+    src:url('../fonts/CQ-Mono1.ttf.woff') format('woff'),
+        url('../fonts/CQ-Mono1.ttf.svg#CQ-Mono1') format('svg'),
+        url('../fonts/CQ-Mono1.ttf.eot'),
+        url('../fonts/CQ-Mono1.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
