@@ -1679,7 +1679,7 @@
 		padding:0;
 	}
 	
-	.contact-box h2 {
+	.contact-box a {
 		margin: 20px 0;
 		font-size: 13px;
 		text-transform: uppercase;
@@ -1835,7 +1835,7 @@
 		
 	.socialFooter .fa {
 		color: #FFF;
-		font-size: 20px;
+		font-size: 30px;
 		margin: 20px 0 20px 10px;
 	}
 		
@@ -2743,5 +2743,34 @@
 
 .stand-up .box-down-right{
   background: #FFC938;
+}
 
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  right: 15px;
+  bottom: 15px;
+  background: rgb(253, 202, 8, 59%);
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: #fdca08;
+  transition: background 0.2s ease-in-out;
 }
