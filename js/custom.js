@@ -106,7 +106,7 @@
             if(current > $this.data('count')){
                 $this.html($this.data('count'));
             } else {    
-                setTimeout(function(){count($this)}, 50);
+                setTimeout(function(){count($this)}, 500);
             }
         }            
         $(".stat-count").each(function() {
