@@ -34,7 +34,7 @@
 	
 	function parallaxInit() {
 		$('#skills_parallax').parallax("30%", 0.1);
-		$('#count_parallax').parallax("30%", 0.1);
+		//$('#count_parallax').parallax("30%", 0.1);
 		$('#video_parallax').parallax("30%", 0.1);
 		$('#featured_parallax').parallax("90%", 0.1);
 	}

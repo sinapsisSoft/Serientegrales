@@ -16,7 +16,7 @@ class Notification {
 
   public function __construct()
   {
-    $this->from = "info@sinapsissoft.com";
+    $this->from = "administrativo@serintegralessi.com";
   }
 
   public function __sendEmail($name, $email, $phone, $subject, $message){
@@ -114,7 +114,7 @@ class Notification {
     else if($type == 2){
       $this->to ="administrativo@serintegralessi.com";
       $this ->title = 'Registro de solicitud web';
-      $banner = 'https://www.https://serintegralessi.com/images/mail/banner1.png';
+      $banner = 'https://www.serintegralessi.com/images/mail/banner1.png';
       $footer = 'https://www.sinapsistechnologies.com.co/assets/img/mail/logo_white.png';
       $headerColor = '#027e88';
       $footerColor = '#39312f';

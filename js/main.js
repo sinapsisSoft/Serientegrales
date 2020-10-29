@@ -1,4 +1,4 @@
-var validateCaptcha = true;
+var validateCaptcha = false;
 var captcha = null;
 
 var revapi;
@@ -39,7 +39,7 @@ $('.owl-carousel').owlCarousel({
 //Function captcha Google
 var onloadCallback = function () {
   captcha = grecaptcha.render('html_element_captcha', {
-    'sitekey': '6LfEXLAZAAAAAD6LFAIJuw4kIlYawGeJKM5nLh07',
+    'sitekey': '6LeEOtwZAAAAAARJtCUXy9Q0tR4OvFvamDPTlLfS',
     'callback': function (response) {
       //$('#btn_submit').removeAttr('disabled');
       validateCaptcha = true;
@@ -92,7 +92,6 @@ function sendMail(json, idForm, type) {
     xhttp.onreadystatechange = function () {
       if (this.readyState === 4 && this.status === 200) {
         console.log(xhttp.responseText);
-        debugger;
         if (xhttp.responseText != 0) {
           if (type == 1) {
             toastr.success("Pronto nos comunicaremos contigo", "Gracias por escribirnos", {
@@ -104,7 +103,7 @@ function sendMail(json, idForm, type) {
             });
           }
           cleanForm(idForm, type);
-          $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
+          $('html, body').scrollTop(0);
         } else {
           toastr.error("Hubo un error, por favor intenta nuevamente", "Error al enviar la solicitud", {
             "closeButton": true,
@@ -186,6 +185,6 @@ function cleanForm(idForm, type) {
     }
   });
 
-  $('.back-to-top').click(function() {
-    window.scrollTo(0,1000);
-  });
+  // $('.back-to-top').click(function() {
+  //   window.scrollTo(0,1000);
+  // });
